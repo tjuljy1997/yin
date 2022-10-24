@@ -71,9 +71,36 @@ APP：返回错误JSON
 
 
 
+SpringBoot默认异常返回JSON
+
+```JSON
+{
+    "timestamp": 1666602045192,
+    "status": 404,
+    "error": "Not Found",
+    "message": "No message available",
+    "path": "/admin/exceptionTest"
+}
+```
 
 
 
+期望封装格式
+
+```JSON
+{
+  "data": {}
+  "success": true,
+  "massage": ""
+}
+```
+
+
+
+解决方法
+
+1. 使用工具类封装
+2. 使用全局异常处理兜底
 
 
 
@@ -203,9 +230,27 @@ Lombok
 
 
 
+设置注释在代码前显示
+
+![image-20221024163612752](C:\Users\22904\AppData\Roaming\Typora\typora-user-images\image-20221024163612752.png)
 
 
 
+
+
+
+
+Swagger
+
+
+
+```xml
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-boot-starter</artifactId>
+    <version>3.0.0</version>
+</dependency>
+```
 
 
 

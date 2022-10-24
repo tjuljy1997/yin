@@ -23,9 +23,4 @@ public class AdminController {
     }
 
 
-    @GetMapping("/admin/123/{23}")
-    public void logtest(@PathVariable("23") String a){
-
-        System.out.println(a);
-    }
 }
